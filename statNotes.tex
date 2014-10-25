@@ -1,0 +1,166 @@
+\documentclass[12pt]{article}
+
+\usepackage{algo,fullpage,url,amssymb,epsfig,color,xspace,xcolor,graphicx}
+\usepackage[
+pdftitle={Statistic Notes},
+pdfsubject={University of Waterloo, Statistic},
+pdfauthor={Brent Scheibelhut}]
+{hyperref}
+
+\begin{document}
+
+\begin{center}
+{\Large\bf University of Waterloo}\\
+\vspace{3mm}
+{\Large\bf Statistics}\\
+\vspace{3mm}
+\textbf{Brent Scheibelhut}
+\end{center}
+
+\definecolor{care}{rgb}{0,0,0}
+\def\question#1{\item[\bf #1.]}
+\def\part#1{\item[\bf #1)]}
+\newcommand{\pc}[1]{\mbox{\textbf{#1}}} % pseudocode
+
+Compiled below are a list of useful properties, general formula manipulation, etc.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\sum_{i=1}^n
+%\subsection
+\section{General}
+
+\begin{minipage}[t]{8cm}
+\begin{itemize}
+\part{a} $\frac{d}{dy} \sum f(x) = \sum \frac{d}{dy} f(x)$
+\part{b} $\prod f(x)^{1/y} = f(x)^{\sum 1/y}$
+\part{c} 
+\end{itemize}
+\end{minipage}
+\begin{minipage}[t]{8cm}
+\begin{itemize}
+\part{d} 
+\part{e} 
+\end{itemize}
+\end{minipage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\sum_{i=1}^n
+%\subsection
+\section{Graphs}
+
+\begin{itemize}
+\part{a} Tail of a graph is the smaller end that (possibly) can stretch for a while
+\part{b} Negatively Skewed = Skewed to the left = Tail on left (small left end) = Mean less than median
+\part{c} Positively Skewed = Skewed to the right = Tail on right (small right end) = Mean greater than median
+\part{d} Correlation is measure of \textbf{linear} dependency
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Basics}
+\subsection{Expectation(Mean)}
+\begin{itemize}
+\part{a} $E(X)=\sum_{all x} xf(x)$ discrete random variable X, probability function f(x)
+\part{b} $E(g(X))=\sum_{all x} g(x)f(x)$
+\part{c} Positively Skewed = Skewed to the right = Tail on right (small right end) = Mean greater than median
+\part{d} Correlation is measure of \textbf{linear} dependency
+\end{itemize}
+\subsection{Variance}
+\begin{itemize}
+\part{a} 
+\end{itemize}
+\subsection{Gamma Function}
+\begin{itemize}
+\part{a} $\gamma(\alpha)=(\alpha-1)!$
+\part{b} $\gamma(\alpha)=(\alpha-1)\gamma(\alpha-1)$
+\part{c} $\gamma(0.5)=\sqrt(\pi)$
+\part{d} $\gamma(-1)=\sqrt(2)$
+\end{itemize}
+\subsection{Ln Function}
+\begin{itemize}
+\item $ln(x*y)=ln(x)+ln(y)$
+\item $ln(x/y)=ln(x)-ln(y)$
+\item $ln(x^y)=y*ln(x)$
+\item $f(x)=ln(x) \Rightarrow f'(x)=\frac{1}{x}$
+\item $\int ln(x)dx=x*(ln(x)-1)+C$
+\item $ln(x)$ is undefined when $x \leq 0$
+\item $ln(1)=0$
+\item $\displaystyle \lim_{x \to +\infty} ln(x)=+\infty$
+\item $\displaystyle \lim_{x \rightarrow 0^{+}} ln(x)=-\infty$
+\end{itemize}
+\subsection{Definite/Indefinite Integrals}
+If f(x) and g(x) are defined and continuous on [a, b], except maybe at a finite number of points and c $\in$ [a,b]:
+\begin{itemize}
+\item $\int_{a}^{b} (f(x)+g(x))dx = \int_{a}^{b} f(x)dx + \int_{a}^{b} g(x)dx$ $^*$same for indefinite
+\item $\int_{a}^{b} (f(x)-g(x))dx = \int_{a}^{b} f(x)dx - \int_{a}^{b} g(x)dx$ $^*$same for indefinite
+\item $\int_{a}^{b} \alpha f(x)dx=\alpha\int_{a}^{b} f(x)dx$ for any arbitrary constant $\alpha$ $^*$same for indefinite
+\item $\int_{c}^{c} f(x)dx=0$
+\item $\int_{a}^{b} f(x)dx =  \int_{a}^{c} f(x)dx + \int_{b}^{c} f(x)dx$
+\item $\int_{b}^{a} f(x)dx = \int_{a}^{b} f(x)dx$
+\item $\int x^n dx = \frac{1}{n+1} x^{n+1} + C  \forall n \neq -1$
+\item $\int e^x dx = e^x + C$
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Linear Combinations}
+\subsection{Independence}
+\begin{itemize}
+\part{a} If X and Y are independent than Cov(X,Y)=0
+\end{itemize}
+
+\subsection{Linear Combinations}
+Note $E(X)= \mu$ and $Var(X)= \sigma^2$
+
+\begin{itemize}
+\part{a} Suppose random variables X and Y are independent. Then, if $g(X)$ and $f(Y)$ are and two functions. $E[g(X)f(Y)]=E[g(X)]E[f(Y)]$
+\part{b} $E(aX+bY)=aE(X)+bE(Y)$, when $a$ and $b$ are constants
+\part{c} $E(X+Y)=E(X)+E(Y)$
+\part{d} $E(X-Y)=E(X)-E(Y)$ 
+\part{e} $E( \sum a_iX_i) = \sum a_i E(X_i)$
+\part{f} $E( \sum X_i) = \sum E(X_i)$
+\part{g} $Let X_1, X_2,..., X_n$ be random variables which have mean $\mu$. The sample mean is $\overline{X}=(\frac{\sum_{i=1}^n X_i}{n})$
+\part{h} $Var(aX+bY)=a^2Var(X)+bVar(Y)+2abCov(X,Y)$
+\part{i} $Var(X+Y)=Var(X-Y)=Var(X)+Var(Y)$ if X and Y are independent.
+\part{j} $\sum a_i^2\sigma_1^2+2\sum_{i<j} a_ia_jCov(X_i, X_j)$
+\part{k} $Var(\sum a_iX_i)=\sum a_i^2Var(X_i) if X_1,...,X_n$ are independent
+\part{l} $Var(\overline{X})=\frac{\sigma^2}{n}$
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Continuity Correction}
+Only apply continuity correction when approximating from discrete to continious
+\begin{itemize}
+\item If $P(x=n)$ use $P(n-0.5 < X < n+0.5)$ (eg. $P(x=5)$ want values around 5)
+\item If $P(x>n)$ use $P(X>n+0.5)$ (eg. $P(x>5)$ we don't want the 5)
+\item If $P(x\leq n)$ use $P(X<n+0.5)$ (eg. $P(x\leq 5)$ we do want the 5)
+\item If $P(x<n)$ use $P(X<n-0.5)$
+\item If $P(x\geq n)$ use $P(X>n-0.5)$
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Confidence Intervals}
+\subsection{Two-sided Intervals}
+In general use c where $P(Z < c)= \frac{(1-100p\%)}{2}+100p\%$
+\begin{itemize}
+\item For 99\% confidence use $z=2.58$
+\item For 98\% confidence use $z=2.326$
+\item For 95\% confidence use $z=1.96$
+\item For 90\% confidence use $z=1.645$
+\end{itemize}
+\subsection{One-sided Intervals}
+\begin{itemize}
+\item For 95\% confidence use $[-\infty, 1.645]$
+\end{itemize}
+\subsection{General}
+\begin{itemize}
+\item $\hat{\mu}\pm c*\frac{\sigma}{\sqrt{n}}$
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Z, t, Chi Calculations}
+Let n represent some number
+\begin{itemize}
+\item If $P(Z<-n)$ use $1-P(Z<n)$ (so that we can use table)
+\item If $P(Z>-n)$ use $P(Z<n)$
+\item If $P(Z>n)$ use $1 - P(Z<n)$
+\item If $P(-n<Z<n)=2P(Z<n)-1$ (if you have to rearrange then add 1 first)
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\part{a} $f(n)=\sqrt{n}$ versus $g(n)=(\log{n})^{2}$
+%\part{b} $f(n)=n^3(5+2\cos{2n})$ versus $g(n)=3n^2+4n^3+5n$
+
+\end{document}
