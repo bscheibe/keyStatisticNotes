@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1414177167 "/Users/brentscheibelhut/Documents/StatisticNotes/statNotes.tex" "/Users/brentscheibelhut/Documents/StatisticNotes/statNotes.pdf" "statNotes" 1414177168
-  "/Users/brentscheibelhut/Documents/StatisticNotes/statNotes.aux" 1414177168 2259 27da458fa2a819e63d83a679d839e1c8 ""
-  "/Users/brentscheibelhut/Documents/StatisticNotes/statNotes.tex" 1414177164 6122 953efa8b2bd36a02bf71edb6b72f6b23 ""
+["pdflatex"] 1414430463 "/Users/brentscheibelhut/Documents/StatisticNotes/statNotes.tex" "/Users/brentscheibelhut/Documents/StatisticNotes/statNotes.pdf" "statNotes" 1414430464
+  "/Users/brentscheibelhut/Documents/StatisticNotes/statNotes.aux" 1414430464 2259 27da458fa2a819e63d83a679d839e1c8 ""
+  "/Users/brentscheibelhut/Documents/StatisticNotes/statNotes.tex" 1414430458 6167 4e3ac6e63e7aa385902a72e887ddfcd5 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -75,9 +75,9 @@
   "/usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt" 1401025990 3832012 904d82bdcc8abf2b1cd296990b82553b ""
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
   "algo.sty" 1410635452 1723 1216807b65927605c1bde9e226888f69 ""
-  "statNotes.aux" 1414177168 2259 27da458fa2a819e63d83a679d839e1c8 ""
-  "statNotes.out" 1414177168 1001 8cc16787fcc200628a707d1a50bc25b9 ""
-  "statNotes.tex" 1414177164 6122 953efa8b2bd36a02bf71edb6b72f6b23 ""
+  "statNotes.aux" 1414430464 2259 27da458fa2a819e63d83a679d839e1c8 ""
+  "statNotes.out" 1414430464 1001 8cc16787fcc200628a707d1a50bc25b9 ""
+  "statNotes.tex" 1414430458 6167 4e3ac6e63e7aa385902a72e887ddfcd5 ""
   (generated)
   "statNotes.aux"
   "statNotes.out"
